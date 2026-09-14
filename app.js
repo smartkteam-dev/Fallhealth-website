@@ -9,8 +9,7 @@ const swedishMassageImage = 'https://static.wixstatic.com/media/75d695884a504e7e
 
 if (!document.head.querySelector('link[rel="icon"]')) {
   const favicon = document.createElement('link');
-  favicon.rel = 'icon';// Deployment refresh: 2026-09-14
-
+  favicon.rel = 'icon';
   favicon.href = '/favicon.svg';
   document.head.appendChild(favicon);
 }
@@ -46,8 +45,12 @@ if (keywordHeadings[window.location.pathname] && document.querySelector('h1')) {
   document.querySelector('h1').textContent = keywordHeadings[window.location.pathname];
 }
 
-if (massageKeywordHeadings[window.location.pathname] && document.querySelector('h1')) {
-  document.querySelector('h1').textContent = massageKeywordHeadings[window.location.pathname];
+const massagePath = window.location.pathname.endsWith('/')
+  ? window.location.pathname
+  : `${window.location.pathname}/`;
+
+if (massageKeywordHeadings[massagePath] && document.querySelector('h1')) {
+  document.querySelector('h1').textContent = massageKeywordHeadings[massagePath];
 }
 
 document.querySelectorAll('a[href*="docs.google.com/forms/d/17yw1ajl9cWbnyFJtk6dG26_2zck7jnq43mCf0ba4Xh8"]').forEach((link) => {
@@ -192,7 +195,7 @@ const massageContent = {
   }
 };
 
-const massagePage = massageContent[window.location.pathname];
+const massagePage = massageContent[massagePath];
 if (massagePage && document.querySelector('main')) {
   const details = document.createElement('section');
   details.className = 'service-details section';
