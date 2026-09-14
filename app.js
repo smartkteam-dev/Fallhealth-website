@@ -109,43 +109,85 @@ const massageContent = {
     focus: 'Swedish massage in Bellevue for relaxation, circulation and everyday tension',
     ideal: 'Guests looking for a gentle full-body reset, work-stress relief or a softer first massage experience.',
     expect: 'Your licensed massage therapist uses long, smooth strokes and adjusts pressure throughout the session. We begin with a conversation about comfort, focus areas and the pace you prefer.',
-    faq: 'Swedish massage is usually a good choice when you want broad, unhurried care rather than intense, targeted pressure.'
+    faq: 'Swedish massage is usually a good choice when you want broad, unhurried care rather than intense, targeted pressure.',
+    storyTitle: 'The Bellevue classic for a reason',
+    story: [
+      'Swedish massage is a natural starting point when your body feels tired from desk work, commuting, travel or a busy week. The rhythm is calm and familiar, giving you room to settle before your therapist gradually works through areas of everyday tension.',
+      'Long, smooth strokes and comfortable pressure are designed to support relaxation and circulation while helping the shoulders, neck and back feel less burdened. Guests from around Bellevue often choose it during a lunch break, after work or whenever they need a clear reset.',
+      'If it has been a while since your last massage, Swedish massage offers a welcoming way to begin. Tell us what your body has been carrying, and we will shape the hour around how you want to feel when you leave.'
+    ]
   },
   '/services/sport-massage/': {
     focus: 'Sports massage in Bellevue for recovery, mobility and active bodies',
     ideal: 'Runners, athletes, active guests and anyone carrying post-workout tightness or repetitive-use tension.',
     expect: 'The session focuses on the areas doing the most work. We discuss recent activity, comfort and recovery goals before choosing pressure and pacing.',
-    faq: 'You do not need to be a professional athlete. Sports massage can be shaped around running, training, work or any active routine.'
+    faq: 'You do not need to be a professional athlete. Sports massage can be shaped around running, training, work or any active routine.',
+    storyTitle: 'Support for Bellevue bodies in motion',
+    story: [
+      'Training, running, hiking and long active days all ask something different from your body. Sports massage gives those areas focused attention, whether you are preparing for activity or trying to recover comfortably afterward.',
+      'Your session can concentrate on overworked legs, shoulders, hips or other areas affected by your routine. We use your recent activity and your own feedback to decide how much pressure and movement make sense that day.',
+      'You do not need a race on the calendar to benefit from focused recovery work. Weekend athletes, regular gym-goers and active professionals can all use sports massage as part of a more intentional wellness routine.'
+    ]
   },
   '/services/foot-reflexology/': {
     focus: 'Foot reflexology in Bellevue for tired feet, relaxation and full-body balance',
     ideal: 'Guests who spend long hours standing, walking or simply want a grounded, focused treatment.',
     expect: 'Your therapist works with specific points on the feet while checking in about pressure and sensitivity. The pace is calm, focused and restorative.',
-    faq: 'Foot reflexology can be booked as a focused treatment or discussed as part of a broader wellness plan.'
+    faq: 'Foot reflexology can be booked as a focused treatment or discussed as part of a broader wellness plan.',
+    storyTitle: 'A focused pause for tired feet',
+    story: [
+      'Your feet carry you through workdays, errands and everything in between, yet they are often the last place to receive care. Foot reflexology creates a quieter kind of appointment centered on easing fatigue and helping you slow down.',
+      'The treatment uses focused pressure across the feet and adapts to your comfort and sensitivity. It can be a simple standalone reset or a thoughtful addition to a longer massage session.',
+      'For Bellevue guests who spend much of the day standing, walking or moving between commitments, a dedicated foot treatment can make the rest of the body feel invited to relax too.'
+    ]
   },
   '/services/deep-tissue-massage/': {
     focus: 'Deep tissue massage in Bellevue for persistent tension, stiffness and mobility',
     ideal: 'Guests who prefer deliberate pressure for areas that feel overworked, tight or difficult to release.',
     expect: 'We use slower movement and focused pressure, with regular check-ins so the work remains productive and within your comfort level.',
-    faq: 'Deep tissue does not have to mean painful. The most effective pressure is the pressure your body can comfortably receive.'
+    faq: 'Deep tissue does not have to mean painful. The most effective pressure is the pressure your body can comfortably receive.',
+    storyTitle: 'Work with the tension that keeps returning',
+    story: [
+      'Some tightness fades after rest. Other tension keeps returning through long hours at a desk, repetitive movement, old injuries or the demands of an active life. Deep tissue massage is designed for guests who want more focused attention on those stubborn areas.',
+      'Your therapist works slowly through deeper layers of muscle and connective tissue rather than rushing from one area to the next. We check in often, because useful pressure should feel intentional and manageable, not overwhelming.',
+      'Many Bellevue guests choose deep tissue massage when general relaxation is not enough. We will discuss what has been bothering you and create a session that supports comfort, mobility and recovery.'
+    ]
   },
   '/services/ashiatsu-massage/': {
     focus: 'Broad pressure, posture and deep relaxation',
     ideal: 'Guests who enjoy a deeper, steady rhythm and want focused attention for tight muscles or posture-related tension.',
     expect: 'Your therapist explains the barefoot technique, discusses areas of focus and builds pressure gradually so you know what to expect.',
-    faq: 'Ashiatsu is a distinctive technique. Tell us about previous massage experiences so we can shape the session around your comfort.'
+    faq: 'Ashiatsu is a distinctive technique. Tell us about previous massage experiences so we can shape the session around your comfort.',
+    storyTitle: 'A grounded, full-body rhythm',
+    story: [
+      'Ashiatsu brings a distinctive sense of depth and steadiness to massage therapy. It can be a good fit for guests who enjoy broad pressure and want to spend less time thinking about the clock and more time settling into the experience.',
+      'Before beginning, your therapist explains the technique and talks through pressure, areas of focus and comfort. The session then builds gradually, allowing tight muscles and posture-related tension to receive thoughtful attention.',
+      'If you are curious about a different kind of massage in Bellevue, Ashiatsu offers a memorable way to release tension while keeping the conversation centered on your needs.'
+    ]
   },
   '/services/four-hands-massage/': {
     focus: 'Immersive relaxation and synchronized care',
     ideal: 'Guests celebrating a special occasion or looking for a memorable, deeply immersive massage experience.',
     expect: 'Two therapists coordinate their movements to create a steady, flowing rhythm. We discuss pressure, comfort and any areas you want prioritized.',
-    faq: 'Four hands massage is personalized just like a one-therapist session, with the added sensation of synchronized movement.'
+    faq: 'Four hands massage is personalized just like a one-therapist session, with the added sensation of synchronized movement.',
+    storyTitle: 'A shared rhythm for a memorable occasion',
+    story: [
+      'Four hands massage is built around coordination. Two therapists work together so the movement feels continuous and immersive, creating a treatment that is especially easy to remember.',
+      'It can be a special choice for a celebration, a gift or a day when you simply want to experience relaxation differently. We still personalize pressure and focus, so the treatment feels considered rather than performative.',
+      'Guests looking for a distinctive massage experience in Bellevue can use four hands massage as a chance to fully switch off and let the rhythm carry the session.'
+    ]
   },
   '/services/couples-massage/': {
     focus: 'Couples massage in Bellevue for shared wellness, reconnection and celebration',
     ideal: 'Partners, friends or family members who want to slow down together and share a restorative experience.',
     expect: 'Each guest receives personalized care while sharing the same relaxing session. We welcome preferences for pressure, focus and pace from both guests.',
-    faq: 'Couples massage is a thoughtful choice for birthdays, anniversaries, reconnection or simply making time together.'
+    faq: 'Couples massage is a thoughtful choice for birthdays, anniversaries, reconnection or simply making time together.',
+    storyTitle: 'Make room for wellness together',
+    story: [
+      'A couples massage gives two people the same quiet appointment while allowing each guest to receive care that fits their own body. You relax side by side, choose your preferred pressure and let the outside week become less important for a while.',
+      'It is a natural fit for date nights, birthdays, anniversaries or a simple promise to slow down together. The experience can be calm and restorative without needing a special occasion attached to it.',
+      'For couples visiting Fall Health Spa in Bellevue, the goal is straightforward: leave feeling cared for individually and more connected by sharing the time.'
+    ]
   }
 };
 
@@ -155,6 +197,7 @@ if (massagePage && document.querySelector('main')) {
   details.className = 'service-details section';
   details.innerHTML = `<div class="service-details-heading"><p class="eyebrow">A little more about your session</p><h2>Care shaped around how you want to feel.</h2><p>Every massage at Fall Health Spa begins with a conversation, not a template.</p></div>
     <div class="service-details-grid"><div><h3>Best for</h3><p>${massagePage.ideal}</p></div><div><h3>Session focus</h3><p>${massagePage.focus}</p></div><div><h3>What to expect</h3><p>${massagePage.expect}</p></div></div>
+    <div class="service-story"><h3>${massagePage.storyTitle}</h3>${massagePage.story.map((paragraph) => `<p>${paragraph}</p>`).join('')}</div>
     <details class="service-faq"><summary>Is this treatment right for me?</summary><p>${massagePage.faq}</p></details>`;
   document.querySelector('main').insertBefore(details, document.querySelector('main').lastElementChild);
 }

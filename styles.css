@@ -72,6 +72,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .service-details-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; padding-top: 30px; border-top: 1px solid var(--line); }
 .service-details-grid h3 { margin: 0 0 10px; color: var(--coral); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; }
 .service-details-grid p { max-width: 34ch; margin: 0; color: rgba(24,53,45,.78); }
+.service-story { max-width: 760px; margin-top: 52px; padding-top: 34px; border-top: 1px solid var(--line); }
+.service-story h3 { margin: 0 0 18px; font: 600 clamp(1.8rem, 3vw, 2.7rem)/1 var(--serif); letter-spacing: -.03em; }
+.service-story p { max-width: 68ch; margin: 0 0 18px; color: rgba(24,53,45,.78); }
 .service-faq { max-width: 780px; margin-top: 44px; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .service-faq summary { cursor: pointer; font: 600 1.25rem var(--serif); }
 .service-faq p { max-width: 65ch; margin: 16px 0 0; color: rgba(24,53,45,.76); }
