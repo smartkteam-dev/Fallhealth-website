@@ -31,8 +31,22 @@ const keywordHeadings = {
   '/insurance-massage': 'Insurance Massage Therapy in Bellevue, WA'
 };
 
+const massageKeywordHeadings = {
+  '/services/swedish-massage/': 'Swedish Massage in Bellevue, WA',
+  '/services/sport-massage/': 'Sports Massage in Bellevue, WA',
+  '/services/foot-reflexology/': 'Foot Reflexology in Bellevue, WA',
+  '/services/deep-tissue-massage/': 'Deep Tissue Massage in Bellevue, WA',
+  '/services/ashiatsu-massage/': 'Ashiatsu Massage in Bellevue, WA',
+  '/services/four-hands-massage/': 'Four Hands Massage in Bellevue, WA',
+  '/services/couples-massage/': 'Couples Massage in Bellevue, WA'
+};
+
 if (keywordHeadings[window.location.pathname] && document.querySelector('h1')) {
   document.querySelector('h1').textContent = keywordHeadings[window.location.pathname];
+}
+
+if (massageKeywordHeadings[window.location.pathname] && document.querySelector('h1')) {
+  document.querySelector('h1').textContent = massageKeywordHeadings[window.location.pathname];
 }
 
 document.querySelectorAll('a[href*="docs.google.com/forms/d/17yw1ajl9cWbnyFJtk6dG26_2zck7jnq43mCf0ba4Xh8"]').forEach((link) => {
@@ -92,25 +106,25 @@ if (window.location.pathname === '/insurance-massage/' || window.location.pathna
 
 const massageContent = {
   '/services/swedish-massage/': {
-    focus: 'Relaxation, circulation and everyday tension',
-    ideal: 'Guests looking for a gentle full-body reset, a calmer nervous system or a softer start to massage therapy.',
-    expect: 'Your therapist uses long, flowing strokes and adjusts pressure throughout the session. We begin with a conversation about comfort, focus areas and the pace you prefer.',
+    focus: 'Swedish massage in Bellevue for relaxation, circulation and everyday tension',
+    ideal: 'Guests looking for a gentle full-body reset, work-stress relief or a softer first massage experience.',
+    expect: 'Your licensed massage therapist uses long, smooth strokes and adjusts pressure throughout the session. We begin with a conversation about comfort, focus areas and the pace you prefer.',
     faq: 'Swedish massage is usually a good choice when you want broad, unhurried care rather than intense, targeted pressure.'
   },
   '/services/sport-massage/': {
-    focus: 'Recovery, mobility and active bodies',
-    ideal: 'Athletes, active guests and anyone carrying post-workout tightness or repetitive-use tension.',
-    expect: 'The session focuses on the areas doing the most work. We discuss recent activity, comfort and your recovery goals before choosing pressure and pacing.',
-    faq: 'You do not need to be a professional athlete. Sport massage can be shaped around running, training, work or any active routine.'
+    focus: 'Sports massage in Bellevue for recovery, mobility and active bodies',
+    ideal: 'Runners, athletes, active guests and anyone carrying post-workout tightness or repetitive-use tension.',
+    expect: 'The session focuses on the areas doing the most work. We discuss recent activity, comfort and recovery goals before choosing pressure and pacing.',
+    faq: 'You do not need to be a professional athlete. Sports massage can be shaped around running, training, work or any active routine.'
   },
   '/services/foot-reflexology/': {
-    focus: 'Tired feet, relaxation and full-body balance',
+    focus: 'Foot reflexology in Bellevue for tired feet, relaxation and full-body balance',
     ideal: 'Guests who spend long hours standing, walking or simply want a grounded, focused treatment.',
     expect: 'Your therapist works with specific points on the feet while checking in about pressure and sensitivity. The pace is calm, focused and restorative.',
     faq: 'Foot reflexology can be booked as a focused treatment or discussed as part of a broader wellness plan.'
   },
   '/services/deep-tissue-massage/': {
-    focus: 'Persistent tension, stiffness and mobility',
+    focus: 'Deep tissue massage in Bellevue for persistent tension, stiffness and mobility',
     ideal: 'Guests who prefer deliberate pressure for areas that feel overworked, tight or difficult to release.',
     expect: 'We use slower movement and focused pressure, with regular check-ins so the work remains productive and within your comfort level.',
     faq: 'Deep tissue does not have to mean painful. The most effective pressure is the pressure your body can comfortably receive.'
@@ -128,7 +142,7 @@ const massageContent = {
     faq: 'Four hands massage is personalized just like a one-therapist session, with the added sensation of synchronized movement.'
   },
   '/services/couples-massage/': {
-    focus: 'Shared wellness, reconnection and celebration',
+    focus: 'Couples massage in Bellevue for shared wellness, reconnection and celebration',
     ideal: 'Partners, friends or family members who want to slow down together and share a restorative experience.',
     expect: 'Each guest receives personalized care while sharing the same relaxing session. We welcome preferences for pressure, focus and pace from both guests.',
     faq: 'Couples massage is a thoughtful choice for birthdays, anniversaries, reconnection or simply making time together.'
