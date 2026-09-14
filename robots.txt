@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.fall-health-spa.com/sitemap.xml
