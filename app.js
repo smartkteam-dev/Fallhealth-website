@@ -90,6 +90,61 @@ if (window.location.pathname === '/insurance-massage/' || window.location.pathna
   if (insuranceCopy) insuranceCopy.textContent = 'We accept Aetna, Kaiser Permanente and Premera Blue Cross. Coverage and eligibility vary by plan, so please verify your benefits with us before booking.';
 }
 
+const massageContent = {
+  '/services/swedish-massage/': {
+    focus: 'Relaxation, circulation and everyday tension',
+    ideal: 'Guests looking for a gentle full-body reset, a calmer nervous system or a softer start to massage therapy.',
+    expect: 'Your therapist uses long, flowing strokes and adjusts pressure throughout the session. We begin with a conversation about comfort, focus areas and the pace you prefer.',
+    faq: 'Swedish massage is usually a good choice when you want broad, unhurried care rather than intense, targeted pressure.'
+  },
+  '/services/sport-massage/': {
+    focus: 'Recovery, mobility and active bodies',
+    ideal: 'Athletes, active guests and anyone carrying post-workout tightness or repetitive-use tension.',
+    expect: 'The session focuses on the areas doing the most work. We discuss recent activity, comfort and your recovery goals before choosing pressure and pacing.',
+    faq: 'You do not need to be a professional athlete. Sport massage can be shaped around running, training, work or any active routine.'
+  },
+  '/services/foot-reflexology/': {
+    focus: 'Tired feet, relaxation and full-body balance',
+    ideal: 'Guests who spend long hours standing, walking or simply want a grounded, focused treatment.',
+    expect: 'Your therapist works with specific points on the feet while checking in about pressure and sensitivity. The pace is calm, focused and restorative.',
+    faq: 'Foot reflexology can be booked as a focused treatment or discussed as part of a broader wellness plan.'
+  },
+  '/services/deep-tissue-massage/': {
+    focus: 'Persistent tension, stiffness and mobility',
+    ideal: 'Guests who prefer deliberate pressure for areas that feel overworked, tight or difficult to release.',
+    expect: 'We use slower movement and focused pressure, with regular check-ins so the work remains productive and within your comfort level.',
+    faq: 'Deep tissue does not have to mean painful. The most effective pressure is the pressure your body can comfortably receive.'
+  },
+  '/services/ashiatsu-massage/': {
+    focus: 'Broad pressure, posture and deep relaxation',
+    ideal: 'Guests who enjoy a deeper, steady rhythm and want focused attention for tight muscles or posture-related tension.',
+    expect: 'Your therapist explains the barefoot technique, discusses areas of focus and builds pressure gradually so you know what to expect.',
+    faq: 'Ashiatsu is a distinctive technique. Tell us about previous massage experiences so we can shape the session around your comfort.'
+  },
+  '/services/four-hands-massage/': {
+    focus: 'Immersive relaxation and synchronized care',
+    ideal: 'Guests celebrating a special occasion or looking for a memorable, deeply immersive massage experience.',
+    expect: 'Two therapists coordinate their movements to create a steady, flowing rhythm. We discuss pressure, comfort and any areas you want prioritized.',
+    faq: 'Four hands massage is personalized just like a one-therapist session, with the added sensation of synchronized movement.'
+  },
+  '/services/couples-massage/': {
+    focus: 'Shared wellness, reconnection and celebration',
+    ideal: 'Partners, friends or family members who want to slow down together and share a restorative experience.',
+    expect: 'Each guest receives personalized care while sharing the same relaxing session. We welcome preferences for pressure, focus and pace from both guests.',
+    faq: 'Couples massage is a thoughtful choice for birthdays, anniversaries, reconnection or simply making time together.'
+  }
+};
+
+const massagePage = massageContent[window.location.pathname];
+if (massagePage && document.querySelector('main')) {
+  const details = document.createElement('section');
+  details.className = 'service-details section';
+  details.innerHTML = `<div class="service-details-heading"><p class="eyebrow">A little more about your session</p><h2>Care shaped around how you want to feel.</h2><p>Every massage at Fall Health Spa begins with a conversation, not a template.</p></div>
+    <div class="service-details-grid"><div><h3>Best for</h3><p>${massagePage.ideal}</p></div><div><h3>Session focus</h3><p>${massagePage.focus}</p></div><div><h3>What to expect</h3><p>${massagePage.expect}</p></div></div>
+    <details class="service-faq"><summary>Is this treatment right for me?</summary><p>${massagePage.faq}</p></details>`;
+  document.querySelector('main').insertBefore(details, document.querySelector('main').lastElementChild);
+}
+
 if (primaryNav && !primaryNav.querySelector('a[href="/"]')) {
   const homeLink = document.createElement('a');
   homeLink.href = '/';
