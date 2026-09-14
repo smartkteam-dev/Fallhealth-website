@@ -9,7 +9,8 @@ const swedishMassageImage = 'https://static.wixstatic.com/media/75d695884a504e7e
 
 if (!document.head.querySelector('link[rel="icon"]')) {
   const favicon = document.createElement('link');
-  favicon.rel = 'icon';
+  favicon.rel = 'icon';// Deployment refresh: 2026-09-14
+
   favicon.href = '/favicon.svg';
   document.head.appendChild(favicon);
 }
