@@ -69,7 +69,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .intro-image { height: auto; aspect-ratio: 40 / 49; border-radius: 180px 180px 10px 10px; box-shadow: var(--shadow); }
 .intro-copy p { max-width: 52ch; color: rgba(11,65,70,.78); }
 .signature { margin: 28px 0 0; font: 600 1.25rem var(--serif); }
-.intro-copy .button { margin-top: 30px; }
+.cta-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 30px; }
+.cta-actions .button { margin-top: 0; }
 .service-details { padding-top: 28px; }
 .service-details-heading { max-width: 760px; margin-bottom: 42px; }
 .service-details-heading h2 { max-width: 680px; margin: 0 0 18px; font: 600 clamp(2.3rem, 4vw, 4rem)/.98 var(--serif); letter-spacing: -.04em; }
@@ -178,6 +179,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .section-heading, .intro-grid, .cta-band { display: block; }
   .section-heading p { margin-top: 20px; }
   .intro-image { height: auto; aspect-ratio: 40 / 49; margin-bottom: 40px; }
+  .cta-actions { align-items: stretch; flex-direction: column; }
+  .cta-actions .button { width: 100%; }
   .service-details { padding-top: 48px; }
   .service-details-grid { grid-template-columns: 1fr; gap: 26px; }
   .service-grid { grid-template-columns: 1fr; }
